@@ -18,6 +18,11 @@
   background-color:#e5d5d4;
 }
 
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 /*font*/
 @font-face {
@@ -26,8 +31,8 @@
     src: url('fonts/abuget-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/abuget-webfont.woff') format('woff'),
          url('fonts/abuget-webfont.ttf') format('truetype'),
+         url('fonts/abuget-webfont.woff2') format('woff2'),
          url('fonts/abuget-webfont.svg#abuget-webfont') format('svg');
-         url('fonts/abuget-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 
@@ -40,8 +45,8 @@
     src: url('fonts/futrfw-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/futrfw-webfont.woff') format('woff'),
          url('fonts/futrfw-webfont.ttf') format('truetype'),
+         url('fonts/futrfw-webfont.woff2') format('woff2'),
          url('fonts/futrfw-webfont.svg#futrfw-webfont') format('svg');
-         url('fonts/futrfw-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 
@@ -110,6 +115,10 @@
   width: 200px;
 }
 
+.wave {
+  margin-bottom: -5px;
+}
+
 /*position*/
 
 @keyframes bubble {
@@ -145,10 +154,22 @@
 	}
 }
 
+/*header*/
+
+.justify-content-end{
+  justify-content: flex-end;
+}
+
+.sticky-top{
+  position: sticky;
+  top: 0;
+}
+
 /*body*/
+
 body {
   margin: 0;
-  font-family:zector-webfont;
+  font-family:galano_grotesque-webfont;
 }
 
 .d-flex {
