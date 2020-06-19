@@ -22,32 +22,39 @@
     />
   </head>
 
-  <body>
-    <img class="cover w-100" src="landingpage.jpg" alt="backgroundimage" />
-    <img
-      class="position-absolute bubble1 floating"
-      src="bubble1.png"
-      alt="backgroundimage"
-    />
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#0099ff"
-        fill-opacity="1"
-        d="M0,256L80,229.3C160,203,320,149,480,154.7C640,160,800,224,960,229.3C1120,235,1280,181,1360,154.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-      ></path>
-    </svg>
-    <header>
-      <ul class="main-navi">
-        <li><a href="Home.html"> Home </a></li>
-        <li><a href="Products.html"> Products </a></li>
-        <li><a href="Workshop.html"> Workshop </a></li>
-      </ul>
-    </header>
+  <body class="bg-primary">
+     
+    <header class="position-relative">
+      <img class="cover w-100" src="landingpage.jpg" alt="backgroundimage" />
+      <img
+        class="position-absolute bubble1 floating"
+        src="bubble1.png"
+        alt="backgroundimage"
+      />
+      
+     <div class="position-absolute bottom">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#9B9B9B"
+          fill-opacity="1"
+          d="M0,256L80,229.3C160,203,320,149,480,154.7C640,160,800,224,960,229.3C1120,235,1280,181,1360,154.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+
+  </header>
+        <ul class="d-flex">
+          <li class="p-2"><a href="Home.html"> Home </a></li>
+          <li class="p-2"><a href="Products.html"> Products </a></li>
+          <li class="p-2"><a href="Workshop.html"> Workshop </a></li>
+        </ul>
+
+    <div class="container"> 
 
     content
 
-    <section>
-      <div class="col-50 textbox">
+    <section class="d-flex">
+      <div class="col-50 textbox p-5">
         <h1>Concept</h1>
         <p>
           Our aim is to unmask the layers <br />
@@ -67,16 +74,16 @@
         </p>
       </div>
       <div class="col-50 textbox">
-        <img src="Vidar1.jpg" alt="Vidarsart" />
+        <img class="w-100" src="Vidar1.jpg" alt="Vidarsart" />
       </div>
     </section>
 
-    <section>
+    <section class="d-flex">
       <div class="col-50 textbox">
-        <img src="Vidar2.jpg" alt="Vidarsart" />
+        <img class="w-100" src="Vidar2.jpg" alt="Vidarsart" />
       </div>
 
-      <div class="col-50 textbox">
+      <div class="col-50 textbox p-5">
         <h1> Live -- & <br> 
         Let Live </h1>
         <p>
@@ -118,6 +125,7 @@ With Vera. </p>
 
 
 
+  </div>
 
     <footer>
       <ul class="SNS-navi">
