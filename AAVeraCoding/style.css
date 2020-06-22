@@ -111,33 +111,28 @@ ul{
 .bubble1 {
   object-fit: cover;
   right: 20%;
+  top: 50%;
+  width: 200px;
+}
+
+.bubble2 {
+  object-fit: contain;
+  right: 65%;
   top: 20%;
   width: 200px;
+  height: 232px;
+}  
+
+.bubble3 {
+  object-fit: contain;
+  right: 35%;
+  top: 15%;
+  width: 200px;
+  height: 232px;
 }
 
 .wave {
   margin-bottom: -5px;
-}
-
-/*position*/
-
-@keyframes bubble {
-  0% {
-    transform: rotate(0) translate(0, 0);
-  }
-  20% {
-    transform: rotate(0) translate(-10px, -5px);
-  }
-  50% {
-    transform: rotate(10deg) translate(10px, 10px);
-  }
-  100% {
-    transform: rotate(0) translate(0px, 0px);
-  }
-}
-
-.floating {
-  animation: bubble 4s ease 0s both infinite;
 }
 
 .col-50 {
@@ -152,6 +147,44 @@ ul{
 	.col-50 {
 		width: 100%;
 	}
+}
+
+
+/*position*/
+
+@keyframes bubble {
+  0%{
+    transform:rotate(0deg)
+              translate(-20px)
+              rotate(0deg);
+  }
+
+  50%{
+    transform:rotate(0deg)
+              translate(10px)
+              rotate(0deg);
+  
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-20px)
+              rotate(-360deg);
+  }
+}
+
+.floating1 {
+  animation: bubble 10s ease 1s reverse infinite;
+}
+.floating2 {
+  animation: bubble 10s ease 1s both infinite;
+}
+
+.center{
+  top: 50%;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  transform: translate(-50%,-50%);
 }
 
 /*header*/
@@ -225,6 +258,34 @@ body {
    max-width:1140px
   }
  }
+
+
+ footer {
+  margin-top: 20px;
+	position: relative;
+	left: 0;
+	top: 0;
+	right: 0;
+	background-color: #A8A8A8;
+	padding: 0 0;
+}
+footer .SNS-navi {
+	margin-left: 10%;
+	margin-bottom: 10px;
+}
+
+footer .SNS-navi li {
+	margin-right: 10px;
+	display: inline-block;
+}
+
+footer .Copyright {
+	margin-left: 10%;
+}
+
+footer 
+
+
 
 
 
